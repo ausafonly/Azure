@@ -5,12 +5,12 @@
    CMDLET to assign tags to specific ResourceGroup and its underlying Resources or to all ResourceGroups and Underlying Resources in a specific Subscription
 .EXAMPLE
     By giving SubscriptionName parameter only this cmdlet assign tags to all ResourceGroups and all Resources in the Subscription
-    Set-dhAzureRGTags -SubscriptionName Tesco
+    Set-AzureRGTags -SubscriptionName Tesco
 .EXAMPLE
     By giving SubscriptionName and ResourceGroup parameter this cmdlet assign tags to specifig ResourceGroup and its underlying Resources in the Subscription
-    Set-dhAzureRGTags -SubscriptionName Tesco -ResourceGroup DHR-RTE-AMS-PRD-0004
+    Set-AzureRGTags -SubscriptionName Tesco -ResourceGroup DHR-RTE-AMS-PRD-0004
 #>
-function Set-dhAzureRGTags {
+function Set-AzureRGTags {
     [CmdletBinding(ConfirmImpact = 'Medium')]
     [OutputType([string])]
 
